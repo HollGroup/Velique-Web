@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bespoke Solid Oak Pieces | Registered Ownership | Velique</title>
+<meta name="description" content="Hand-finished solid oak pieces from wind-fallen trees in a private Nottinghamshire woodland. Every piece is numbered, registered and certified.">
+<link rel="canonical" href="https://velique.co.uk/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://velique.co.uk/">
+<meta property="og:title" content="Bespoke Solid Oak Pieces | Registered Ownership | Velique">
+<meta property="og:description" content="Hand-finished solid oak pieces from wind-fallen trees in a private Nottinghamshire woodland. Every piece is numbered, registered and certified.">
+<meta property="og:image" content="https://res.cloudinary.com/q4ixb9hv/image/upload/f_auto,q_auto/Velique_without_text">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bespoke Solid Oak Pieces | Registered Ownership | Velique">
+<meta name="twitter:description" content="Hand-finished solid oak pieces from wind-fallen trees in a private Nottinghamshire woodland. Every piece is numbered, registered and certified.">
+<meta name="twitter:image" content="https://res.cloudinary.com/q4ixb9hv/image/upload/f_auto,q_auto/Velique_without_text">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bark:#181310;
+    --walnut:#3A2C1E;
+    --oak:#9C6B3E;
+    --oak-light:#C99A63;
+    --paper:#F7F1E4;
+    --paper-dim:#EFE6D2;
+    --ivory:#EFE6D6;
+    --brass:#B08D3F;
+    --line: rgba(237,227,211,.16);
+    --line-dark: rgba(58,44,30,.18);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--walnut);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    line-height:1.1;
+    margin:0;
+    color:inherit;
+  }
+  p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  section{padding:0 6vw;}
+  .wrap{max-width:1120px;margin:0 auto;}
+
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;}
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(24,19,16,.94);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+    padding:0 6vw;
+  }
+  .nav{
+    max-width:1120px;margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    height:76px;
+  }
+  .brand{display:flex;align-items:center;gap:12px;color:var(--ivory);}
+  .brand img{height:34px;width:auto;}
+  .brand-name{font-family:'Fraunces',serif;font-size:1.05rem;letter-spacing:.02em;color:var(--ivory);}
+  .brand-sub{font-size:.68rem;color:var(--oak-light);letter-spacing:.14em;display:block;margin-top:1px;}
+  .nav-links{display:flex;gap:34px;align-items:center;}
+  .nav-links a{
+    color:var(--ivory);opacity:.78;font-size:.92rem;
+    padding:6px 0;border-bottom:1px solid transparent;
+    transition:opacity .2s, border-color .2s;
+  }
+  .nav-links a:hover{opacity:1;border-color:var(--oak-light);}
+  .nav-cta{
+    background:var(--oak);color:var(--bark)!important;
+    padding:10px 20px;border-radius:2px;font-size:.88rem;font-weight:600;
+    opacity:1!important;border:none!important;
+  }
+  .nav-cta:hover{background:var(--oak-light);}
+  .nav-toggle{display:none;}
+
+  @media(max-width:820px){
+    .nav-links{
+      position:fixed;top:76px;left:0;right:0;
+      background:var(--bark);flex-direction:column;align-items:flex-start;
+      gap:0;border-top:1px solid var(--line);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+      padding:0 6vw;
+    }
+    .nav-links.open{max-height:340px;padding:12px 6vw 24px;}
+    .nav-links a{width:100%;padding:12px 0;border-bottom:1px solid var(--line);}
+    .nav-cta{margin-top:8px;text-align:center;}
+    .nav-toggle{
+      display:block;background:none;border:none;color:var(--ivory);
+      font-size:1.6rem;cursor:pointer;line-height:1;
+    }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:var(--bark);color:var(--ivory);
+    padding-top:96px;padding-bottom:110px;position:relative;overflow:hidden;
+  }
+  .hero-grain{
+    position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background:
+      repeating-linear-gradient(100deg, rgba(156,107,62,.05) 0 2px, transparent 2px 60px),
+      repeating-linear-gradient(96deg, rgba(156,107,62,.04) 0 1px, transparent 1px 90px);
+  }
+  .hero-inner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end;}
+  .eyebrow{
+    color:var(--oak-light);font-size:.82rem;letter-spacing:.06em;
+    margin-bottom:22px;display:block;
+  }
+  .hero h1{
+    font-size:clamp(2.5rem,4.6vw,4rem);
+    max-width:12ch;
+  }
+  .hero h1 em{font-style:italic;color:var(--oak-light);}
+  .hero-lede{
+    margin-top:26px;font-size:1.08rem;max-width:46ch;color:rgba(239,230,214,.82);
+  }
+  .hero-actions{margin-top:38px;display:flex;gap:16px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:14px 26px;font-size:.92rem;font-weight:600;
+    border-radius:2px;transition:transform .15s ease, background .2s ease;
+  }
+  .btn-primary{background:var(--oak);color:var(--bark);}
+  .btn-primary:hover{background:var(--oak-light);transform:translateY(-1px);}
+  .btn-ghost{border:1px solid var(--line);color:var(--ivory);}
+  .btn-ghost:hover{border-color:var(--oak-light);color:var(--oak-light);}
+
+  .hero-cert{
+    background:var(--paper);color:var(--walnut);
+    border:1px solid var(--line-dark);
+    padding:30px;position:relative;
+  }
+  .hero-cert::before{
+    content:"";position:absolute;inset:8px;border:1px solid rgba(176,141,63,.4);
+    pointer-events:none;
+  }
+  .hero-cert-label{font-size:.68rem;letter-spacing:.14em;color:var(--brass);}
+  .hero-cert h3{font-size:1.3rem;margin-top:10px;}
+  .hero-cert dl{margin-top:20px;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:.86rem;}
+  .hero-cert dt{color:#8a7658;}
+  .hero-cert dd{margin:0;font-weight:500;}
+  .hero-cert-seal{
+    margin-top:22px;padding-top:18px;border-top:1px dashed var(--line-dark);
+    font-size:.74rem;color:#8a7658;display:flex;justify-content:space-between;
+  }
+
+  @media(max-width:900px){
+    .hero-inner{grid-template-columns:1fr;}
+    .hero-cert{order:2;max-width:420px;}
+  }
+
+  /* ---------- Section labels ---------- */
+  .label-row{
+    display:flex;align-items:center;gap:14px;margin-bottom:18px;
+  }
+  .label-row .idx{font-family:'Fraunces',serif;font-size:.9rem;color:var(--oak);}
+  .label-row .rule{flex:1;height:1px;background:var(--line-dark);}
+  .section-head{max-width:640px;}
+  .section-head h2{font-size:clamp(1.7rem,3vw,2.3rem);}
+  .section-head p{margin-top:16px;color:#5c4a34;font-size:1.02rem;max-width:56ch;}
+
+  /* ---------- Story ---------- */
+  .story{padding-top:96px;padding-bottom:96px;}
+  .story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start;}
+  .story-grid p{font-size:1.06rem;color:#4a3a28;margin-bottom:18px;}
+  .story-grid p:last-child{margin-bottom:0;}
+  .story-grid em{color:var(--oak);font-style:italic;}
+  @media(max-width:820px){.story-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Process ---------- */
+  .process{background:var(--paper-dim);padding-top:96px;padding-bottom:100px;border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);}
+  .process-list{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);}
+  .process-item{
+    padding:0 22px 0 0;border-left:1px solid var(--line-dark);padding-left:22px;
+  }
+  .process-item:first-child{border-left:none;padding-left:0;}
+  .process-num{font-family:'Fraunces',serif;font-size:.95rem;color:var(--oak);margin-bottom:14px;}
+  .process-item h3{font-size:1.15rem;margin-bottom:10px;}
+  .process-item p{color:#5c4a34;font-size:.94rem;}
+  @media(max-width:900px){
+    .process-list{grid-template-columns:1fr 1fr;gap:32px 0;}
+    .process-item{border-left:none;padding-left:0;border-top:1px solid var(--line-dark);padding-top:22px;}
+    .process-item:nth-child(1),.process-item:nth-child(2){border-top:none;padding-top:0;}
+  }
+  @media(max-width:540px){
+    .process-list{grid-template-columns:1fr;}
+    .process-item{border-top:1px solid var(--line-dark);padding-top:22px;}
+    .process-item:first-child{border-top:none;padding-top:0;}
+  }
+
+  /* ---------- Registry ---------- */
+  .registry{padding-top:100px;padding-bottom:100px;}
+  .registry-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  .registry-list{margin-top:30px;border-top:1px solid var(--line-dark);}
+  .registry-row{
+    display:flex;justify-content:space-between;gap:20px;
+    padding:16px 0;border-bottom:1px solid var(--line-dark);font-size:.96rem;
+  }
+  .registry-row span:first-child{color:#8a7658;}
+  .registry-row span:last-child{font-weight:500;text-align:right;}
+
+  .cert-card{
+    background:var(--bark);color:var(--ivory);padding:36px;position:relative;
+  }
+  .cert-card::before{content:"";position:absolute;inset:9px;border:1px solid rgba(201,154,99,.3);}
+  .cert-top{display:flex;justify-content:space-between;align-items:flex-start;font-size:.7rem;letter-spacing:.1em;color:var(--oak-light);}
+  .cert-card h3{margin-top:22px;font-size:1.5rem;}
+  .cert-owner{margin-top:6px;color:rgba(239,230,214,.7);font-size:.92rem;}
+  .cert-meta{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:16px 10px;font-size:.82rem;}
+  .cert-meta dt{color:rgba(239,230,214,.5);}
+  .cert-meta dd{margin:2px 0 0;font-weight:500;}
+  .cert-foot{margin-top:26px;padding-top:18px;border-top:1px dashed rgba(239,230,214,.2);font-size:.72rem;color:rgba(239,230,214,.55);}
+
+  @media(max-width:900px){.registry-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Who's behind it ---------- */
+  .team{background:var(--paper-dim);padding-top:96px;padding-bottom:100px;border-top:1px solid var(--line-dark);}
+  .team-grid{margin-top:50px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-dark);}
+  .team-card{background:var(--paper-dim);padding:34px;}
+  .team-card h3{font-size:1.15rem;margin-bottom:12px;}
+  .team-card p{color:#5c4a34;font-size:.96rem;}
+  .facts{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-dark);}
+  .fact{background:var(--paper-dim);padding:26px 24px;}
+  .fact-label{font-size:.7rem;letter-spacing:.08em;color:var(--oak);margin-bottom:8px;}
+  .fact p{font-size:.92rem;color:#5c4a34;}
+  @media(max-width:820px){.team-grid,.facts{grid-template-columns:1fr 1fr;}}
+  @media(max-width:540px){.team-grid,.facts{grid-template-columns:1fr;}}
+
+  /* ---------- Past pieces ---------- */
+  .pieces{padding-top:100px;padding-bottom:60px;}
+  .pieces-grid{margin-top:50px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .piece{background:var(--bark);aspect-ratio:4/5;position:relative;display:flex;align-items:flex-end;overflow:hidden;}
+  .piece svg{position:absolute;inset:0;width:100%;height:100%;opacity:.9;}
+  .piece-cap{position:relative;padding:20px;color:var(--ivory);width:100%;
+    background:linear-gradient(to top, rgba(24,19,16,.9), transparent 80%);}
+  .piece-cap span{display:block;font-size:.68rem;letter-spacing:.08em;color:var(--oak-light);margin-bottom:4px;}
+  .piece-cap strong{font-family:'Fraunces',serif;font-weight:500;font-size:1.02rem;}
+  .pieces-more{margin-top:36px;text-align:center;}
+  .pieces-note{margin-top:14px;font-size:.8rem;color:#8a7658;text-align:center;}
+  @media(max-width:820px){.pieces-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:540px){.pieces-grid{grid-template-columns:1fr;}}
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--paper-dim);padding-top:100px;padding-bottom:100px;border-top:1px solid var(--line-dark);}
+  .faq-list{margin-top:40px;max-width:760px;}
+  .faq-item{border-bottom:1px solid var(--line-dark);}
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;
+    font-family:'Fraunces',serif;font-size:1.04rem;color:var(--walnut);
+  }
+  .faq-q .plus{font-family:'Inter',sans-serif;font-size:1.3rem;color:var(--oak);transition:transform .2s ease;flex-shrink:0;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
+  .faq-a p{padding-bottom:22px;color:#5c4a34;font-size:.96rem;max-width:64ch;}
+
+  /* ---------- Closing CTA ---------- */
+  .closing{background:var(--bark);color:var(--ivory);padding-top:100px;padding-bottom:100px;text-align:center;}
+  .closing .wrap{max-width:640px;}
+  .closing h2{font-size:clamp(1.9rem,3.4vw,2.5rem);}
+  .closing p{margin-top:18px;color:rgba(239,230,214,.75);font-size:1.02rem;}
+  .closing-contact{margin-top:36px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+  /* ---------- Footer ---------- */
+  footer{padding:40px 6vw;border-top:1px solid var(--line-dark);}
+  .foot-inner{
+    max-width:1120px;margin:0 auto;display:flex;justify-content:space-between;
+    align-items:center;flex-wrap:wrap;gap:16px;font-size:.82rem;color:#8a7658;
+  }
+  .foot-inner a{color:#8a7658;}
+  .foot-inner a:hover{color:var(--oak);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#" class="brand">
+      <img src="https://res.cloudinary.com/q4ixb9hv/image/upload/f_auto,q_auto/Velique_without_text" alt="Velique logo">
+      <span>
+        <span class="brand-name">Velique</span>
+        <span class="brand-sub">OAK &amp; REGISTRY</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#story">Story</a>
+      <a href="#process">Process</a>
+      <a href="#registry">Registry</a>
+      <a href="#pieces">Past pieces</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grain"></div>
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">Nottinghamshire, England</span>
+      <h1>One tree. One piece. <em>One owner of record.</em></h1>
+      <p class="hero-lede">Velique makes solid oak pieces from wind-fallen trees in a single private woodland, gathered by hand with the owner's permission. Every piece is numbered, entered in our private registry, and issued with a certificate in your name.</p>
+      <div class="hero-actions">
+        <a href="#registry" class="btn btn-primary">See how registration works</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-cert">
+      <span class="hero-cert-label">CERTIFICATE OF OWNERSHIP</span>
+      <h3>The Kelham Bench</h3>
+      <dl>
+        <dt>Material</dt><dd>Solid oak, single trunk</dd>
+        <dt>Origin</dt><dd>Private woodland, Nottinghamshire</dd>
+        <dt>Registered owner</dt><dd>E. Whitfield</dd>
+        <dt>Registry no.</dt><dd>VLQ&#8209;0014</dd>
+      </dl>
+      <div class="hero-cert-seal">
+        <span>Registered &amp; original</span>
+        <span>No. 014</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="label-row"><span class="idx">The idea</span><span class="rule"></span></div>
+    <div class="story-grid">
+      <h2>From woodland floor to registered object.</h2>
+      <div>
+        <p>We work one private oak woodland near Nottingham, by permission of its owner, helping clear timber that has already come down — storm&#8209;thrown, wind&#8209;snapped, or simply old. No tree is ever cut standing.</p>
+        <p>That oak is seasoned slowly, then shaped entirely by hand into pieces that keep the character of the tree they came from. <em>Nothing is repeated, because nothing we start with can be.</em></p>
+        <p>What we add beyond the craft is a record: who owns which piece, from the day it leaves our workshop onward.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="label-row"><span class="idx">How a piece is made</span><span class="rule"></span></div>
+    <div class="section-head">
+      <h2>Four stages, one at a time.</h2>
+    </div>
+    <div class="process-list">
+      <div class="process-item">
+        <div class="process-num">01</div>
+        <h3>Gathered, not felled</h3>
+        <p>We walk the woodland with the owner, selecting oak that has already come down. Nothing standing is ever touched.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">02</div>
+        <h3>Seasoned slowly</h3>
+        <p>Air&#8209;dried for many months so the timber settles honestly before it is ever shaped.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">03</div>
+        <h3>Made by hand</h3>
+        <p>Cut, worked and finished by hand in our workshop, one piece at a time, never as a batch.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">04</div>
+        <h3>Registered &amp; certified</h3>
+        <p>Numbered, entered in the Velique registry against your name, and issued with a certificate of ownership.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="registry" id="registry">
+  <div class="wrap registry-grid">
+    <div>
+      <div class="label-row"><span class="idx">The registry</span><span class="rule"></span></div>
+      <h2>Ownership, kept on record.</h2>
+      <p style="margin-top:16px;color:#5c4a34;font-size:1.02rem;">Every Velique piece is entered into a private registry under the piece's name and its owner's name. You receive a certificate of ownership at purchase. If you later sell, gift, or pass a piece on, you can notify us so the registry stays accurate.</p>
+      <div class="registry-list">
+        <div class="registry-row"><span>Held by</span><span>Piece name + registered owner</span></div>
+        <div class="registry-row"><span>Issued</span><span>Certificate of ownership</span></div>
+        <div class="registry-row"><span>On resale</span><span>Ownership transfer on request</span></div>
+        <div class="registry-row"><span>Access</span><span>By registry number, on request</span></div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-top"><span>VELIQUE REGISTRY</span><span>ESTD. WORKSHOP</span></div>
+      <h3>The Kelham Bench</h3>
+      <p class="cert-owner">Registered to E. Whitfield</p>
+      <dl class="cert-meta">
+        <dt>Material</dt><dd>Solid oak, single trunk</dd>
+        <dt>Origin</dt><dd>Nottinghamshire woodland</dd>
+        <dt>Registry no.</dt><dd>VLQ&#8209;0014</dd>
+        <dt>Status</dt><dd>Registered, original</dd>
+      </dl>
+      <div class="cert-foot">Issued at the time of purchase and updated on transfer of ownership.</div>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="label-row"><span class="idx">Who's behind it</span><span class="rule"></span></div>
+    <div class="section-head">
+      <h2>Two people, one wood, one workshop.</h2>
+      <p>Velique is run by two friends who would rather make one registered, unrepeatable piece a week than a hundred identical ones a day. Every stage — sourcing, seasoning, making, registering — stays under our own roof.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <h3>Sourcing &amp; wood</h3>
+        <p>Woodland access, collection, and seasoning.</p>
+      </div>
+      <div class="team-card">
+        <h3>Making &amp; registry</h3>
+        <p>Shaping, finishing, and the ownership record.</p>
+      </div>
+    </div>
+    <div class="facts">
+      <div class="fact"><div class="fact-label">MATERIAL</div><p>Solid oak only, from a single private woodland. Nothing imported, nothing veneered.</p></div>
+      <div class="fact"><div class="fact-label">SOURCING</div><p>Wind&#8209;fallen and storm&#8209;felled trees only, collected with the landowner's permission.</p></div>
+      <div class="fact"><div class="fact-label">MAKING</div><p>Cut, seasoned and finished entirely by hand. No two pieces share a grain, a knot, or a weight.</p></div>
+      <div class="fact"><div class="fact-label">OWNERSHIP</div><p>Every piece is numbered and registered to its owner, with a certificate and an optional transfer record.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pieces" id="pieces">
+  <div class="wrap">
+    <div class="label-row"><span class="idx">The collection so far</span><span class="rule"></span></div>
+    <div class="section-head">
+      <h2>Past pieces.</h2>
+      <p>A small selection of pieces already registered to their owners.</p>
+    </div>
+    <div class="pieces-grid">
+      <div class="piece">
+        <svg viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><rect width="300" height="375" fill="#211a15"/><path d="M150 60 C120 140 120 240 150 320" stroke="#9C6B3E" stroke-width="3" fill="none" opacity=".7"/><ellipse cx="150" cy="300" rx="70" ry="14" fill="#2c2119"/></svg>
+        <div class="piece-cap"><span>VLQ&#8209;0009</span><strong>The Sherwood Floor Lamp</strong></div>
+      </div>
+      <div class="piece">
+        <svg viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><rect width="300" height="375" fill="#211a15"/><path d="M110 320 C100 220 160 200 150 90 M150 90 C160 130 210 140 220 180" stroke="#9C6B3E" stroke-width="3" fill="none" opacity=".7"/></svg>
+        <div class="piece-cap"><span>VLQ&#8209;0011</span><strong>The Welbeck Branch Lamp</strong></div>
+      </div>
+      <div class="piece">
+        <svg viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><rect width="300" height="375" fill="#211a15"/><ellipse cx="150" cy="280" rx="66" ry="60" fill="none" stroke="#9C6B3E" stroke-width="3" opacity=".7"/><rect x="140" y="120" width="20" height="100" fill="#9C6B3E" opacity=".5"/></svg>
+        <div class="piece-cap"><span>VLQ&#8209;0003</span><strong>The Clumber Table Lamp</strong></div>
+      </div>
+    </div>
+    <p class="pieces-note">Placeholder illustrations — replace with real photography uploaded to Cloudinary (q4ixb9hv) when ready.</p>
+    <div class="pieces-more">
+      <a href="/archive/" class="btn btn-ghost" style="color:var(--walnut);border-color:var(--line-dark);">View the full archive</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="label-row"><span class="idx">Questions</span><span class="rule"></span></div>
+    <div class="section-head">
+      <h2>Frequently asked questions</h2>
+      <p>Everything people usually ask before registering their first piece.</p>
+    </div>
+    <div class="faq-list" id="faqList">
+
+      <div class="faq-item">
+        <button class="faq-q"><span>What makes a Velique piece unique?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Each piece is made from a single trunk of wind&#8209;fallen oak, so the grain, knots and shape are never repeated. We make in single pieces, not runs, and every item is numbered and entered in our registry under its own name.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>How much does a piece cost?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Pieces typically range from £400 to £1,600, depending on size, complexity and the character of the timber used. Each price is confirmed individually once a piece is registered and ready.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Where does the oak come from?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>All our timber comes from one private woodland near Nottingham. We work with the landowner's permission as part of their ongoing woodland management, collecting trees that have already come down.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Do you ever cut down trees?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>No. We only collect oak that has already fallen, whether from storm damage, age, or natural woodland thinning. No standing tree is ever felled for Velique.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>What is the Certificate of Ownership?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Every piece is sold with a certificate recording the piece's name, registry number, material, origin, and the registered owner's name. It is your proof of authenticity and provenance.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Can I transfer ownership if I sell or gift a piece?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes. Registered owners can notify us of a change of ownership, and we update the registry entry so the certificate stays accurate for the next owner.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Is the wood sustainably sourced?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes. We only use timber that has already fallen from a single, permission&#8209;based woodland source, rather than commissioning any tree to be cut.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>How long does a piece take to make?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Seasoning alone takes many months, followed by hand shaping and finishing. Because every piece is made individually, timelines vary — we confirm this before you register interest.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Do you take bespoke or commissioned pieces?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>We consider a limited number of commissions each year, subject to suitable oak being available from our woodland. Register your interest and we will contact you directly.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="closing" id="contact">
+  <div class="wrap">
+    <div class="label-row" style="justify-content:center;"><span class="idx" style="color:var(--oak-light);">By request only</span></div>
+    <h2>Request access to the collection.</h2>
+    <p>We release pieces individually as they finish seasoning and registration. Get in touch and we will contact you directly when a piece becomes available.</p>
+    <div class="closing-contact">
+      <a href="mailto:hello@velique.co.uk" class="btn btn-primary">hello@velique.co.uk</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <span>Velique — Nottingham, England. Solid oak. Registered ownership.</span>
+    <span>
+      <a href="#story">Story</a> &nbsp;·&nbsp;
+      <a href="#process">Process</a> &nbsp;·&nbsp;
+      <a href="#registry">Registry</a> &nbsp;·&nbsp;
+      <a href="#pieces">Past pieces</a> &nbsp;·&nbsp;
+      <a href="#faq">FAQ</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  toggle.addEventListener('click', function(){
+    links.classList.toggle('open');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ links.classList.remove('open'); });
+  });
+
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var btn = item.querySelector('.faq-q');
+    var ans = item.querySelector('.faq-a');
+    btn.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){
+        o.classList.remove('open');
+        o.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        ans.style.maxHeight = ans.scrollHeight + 'px';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
