@@ -146,6 +146,16 @@
   .btn-ghost{border:1px solid var(--line);color:var(--ivory);}
   .btn-ghost:hover{border-color:var(--oak-light);color:var(--oak-light);}
 
+  /* ---------- Spotlight (tealights) ---------- */
+  .spotlight{padding-top:88px;padding-bottom:92px;}
+  .spotlight-grid{margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+  .spotlight-card img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px;}
+  .spotlight-cap{margin-top:18px;display:flex;justify-content:space-between;align-items:baseline;gap:16px;}
+  .spotlight-cap h3{font-size:1.15rem;}
+  .spotlight-cap span{font-size:.8rem;color:#8a7658;letter-spacing:.04em;white-space:nowrap;}
+  .spotlight-card p{margin-top:8px;color:#5c4a34;font-size:.94rem;max-width:48ch;}
+  @media(max-width:820px){.spotlight-grid{grid-template-columns:1fr;gap:44px;}}
+
   /* ---------- Section labels ---------- */
   .label-row{
     display:flex;align-items:center;gap:14px;margin-bottom:18px;
@@ -274,6 +284,28 @@
     <div class="hero-actions">
       <a href="#process" class="btn btn-primary">See how each piece is made</a>
       <a href="#contact" class="btn btn-ghost">Enquire about wholesale</a>
+    </div>
+  </div>
+</section>
+
+<section class="spotlight" id="tealights">
+  <div class="wrap">
+    <div class="label-row"><span class="idx">For Christmas</span><span class="rule"></span></div>
+    <div class="section-head">
+      <h2>Pieces made to give.</h2>
+      <p>Cut from the same oak as everything else here, sized for gifting and ready to ship this Christmas.</p>
+    </div>
+    <div class="spotlight-grid">
+      <div class="spotlight-card">
+        <img src="https://res.cloudinary.com/q4ixb9hv/image/upload/f_auto,q_auto/v1788282865/IMG_0002.jpg" alt="The Ollerton Tealight Board, a solid oak board holding six tealights">
+        <div class="spotlight-cap"><h3>The Ollerton Tealight Board</h3><span>Six tealights</span></div>
+        <p>A single length of oak, cut and drilled to hold six tealights in a row. One board, one piece of wood, start to finish.</p>
+      </div>
+      <div class="spotlight-card">
+        <img src="https://res.cloudinary.com/q4ixb9hv/image/upload/f_auto,q_auto/v1788282866/IMG_0009.jpg" alt="The Bilsthorpe Tealight Set, a single and a double oak tealight holder">
+        <div class="spotlight-cap"><h3>The Bilsthorpe Tealight Set</h3><span>Single &amp; double</span></div>
+        <p>A single and a double holder, cut from the same run of oak and sold as a pair — small enough to place anywhere.</p>
+      </div>
     </div>
   </div>
 </section>
